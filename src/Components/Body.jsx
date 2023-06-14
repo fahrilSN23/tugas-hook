@@ -12,7 +12,7 @@ const Body = () => {
         axios.get('https://newsapi.org/v2/top-headlines?country=id&apiKey=8182a972d0904387ad12d261ea43b234').then((Response) => {
             setAPI(Response.data.articles);
         },[])
-    })
+    },[])
 
     useEffect(() => {
         SetSearchResult(filterAPI);
